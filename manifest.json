@@ -1,0 +1,48 @@
+{
+    "manifest_version": 3,
+    "name": "A collection of tools",
+    "version": "1.0",
+    "content_scripts": [
+        {
+            "name": "ietf_viewer",
+            "matches": [
+                "*://*.ietf.org/*"
+            ],
+            "css": [
+                "./ietf_viewer/article.css"
+            ]
+        },
+        {
+            "name": "ad_cleaner",
+            "matches": [
+                "*://www.atguigu.com/*",
+                "*://my.oschina.net/*",
+                "*://blog.csdn.net/*",
+                "*://www.zhihu.com/*",
+                "*://www.baidu.com/s*",
+                "*://segmentfault.com/*",
+                "*://www.grammar-monster.com/*",
+                "*://golangdocs.com/*",
+                "*://context.reverso.net/*"
+            ],
+            "js":[
+                "./ad_cleaner/clean.js"
+            ],
+            "run_at":"document_end"
+        },
+        {
+            "name":"135_helper",
+            "matches":["*://*.135editor.com/*"],
+            "js":["./135_helper/help.js"],
+            "run_at":"document_end"
+        },
+        {
+            "name":"jianbiaoku_helper",
+            "matches":["*://*.jianbiaoku.com/*"],
+            "js":[
+                "./jianbiaoku_helper/help.js"
+            ],
+            "run_at":"document_end"
+        }
+    ]
+}
