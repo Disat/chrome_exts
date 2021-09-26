@@ -25,22 +25,38 @@
                 "*://golangdocs.com/*",
                 "*://context.reverso.net/*"
             ],
-            "js":[
+            "js": [
                 "./ad_cleaner/clean.js"
             ],
-            "run_at":"document_end"
+            "run_at": "document_end"
         },
         {
-            "name":"135_helper",
-            "matches":["*://*.135editor.com/*"],
-            "js":["./135_helper/help.js"],
-            "run_at":"document_end"
+            "name": "135_helper",
+            "matches": [
+                "*://*.135editor.com/*"
+            ],
+            "js": [
+                "./135_helper/help.js"
+            ],
+            "run_at": "document_end"
         },
         {
-            "name":"jianbiaoku_helper",
-            "matches":["*://*.jianbiaoku.com/*"],
-            "js":[
+            "name": "jianbiaoku_helper",
+            "matches": [
+                "*://*.jianbiaoku.com/*"
+            ],
+            "js": [
                 "./jianbiaoku_helper/help.js"
+            ],
+            "run_at": "document_end"
+        },
+        {
+            "name":"create_golang_project",
+            "matches":[
+                "*://*.eddycjy.com/*"
+            ],
+            "js":[
+                "./eddycjy/eddycjy.js"
             ],
             "run_at":"document_end"
         }
